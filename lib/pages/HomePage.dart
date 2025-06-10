@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:smbg/pages/AboutAuthorPage.dart';
+import 'package:smbg/pages/AboutUs_Dev.dart';
+import 'package:smbg/pages/BenefitsPage.dart';
 import 'package:smbg/pages/ListOfAll.dart';
+import 'package:smbg/pages/WhyLearnPage.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -49,7 +53,7 @@ class _HomePageState extends State<HomePage> {
             ),
             ListTile(
               leading: const Icon(Icons.home),
-              title: const Text('गृह'),
+              title: const Text('मुखपृष्ठ'),
               onTap: () => _onItemTapped(0),
             ),
             ListTile(
@@ -90,90 +94,20 @@ class _HomePageState extends State<HomePage> {
   }
 }
 
-class WhyLearnPage extends StatelessWidget {
+
+class TeachingsPage extends StatefulWidget {
+  const TeachingsPage({super.key});
+
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text('गीता क्यों सीखें?')),
-      body: const Center(
-        child: Padding(
-          padding: EdgeInsets.all(16.0),
-          child: Text(
-            'भगवद्गीता जीवन की चुनौतियों के लिए शाश्वत ज्ञान प्रदान करती है...',
-          ),
-        ),
-      ),
-    );
-  }
+  State<TeachingsPage> createState() => _TeachingsPageState();
 }
 
-class AboutAuthorPage extends StatelessWidget {
+class _TeachingsPageState extends State<TeachingsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('भगवान श्रीकृष्ण के बारे में')),
-      body: const Center(
-        child: Padding(
-          padding: EdgeInsets.all(16.0),
-          child: Text(
-            'श्रीकृष्ण भगवान विष्णु के अवतार हैं जिन्होंने द्वापर युग में अवतार लिया...',
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-class BenefitsPage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text('पठन के लाभ')),
-      body: const Center(
-        child: Padding(
-          padding: EdgeInsets.all(16.0),
-          child: Text(
-            'भगवद्गीता का नियमित पाठ करने से:\n\n'
-                '• मन को शांति मिलती है\n'
-                '• निर्णय लेने की क्षमता बढ़ती है\n'
-                '• तनाव और चिंता कम होती है...',
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-class TeachingsPage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text('मुख्य शिक्षाएँ')),
-      body: const Center(
-        child: Padding(
-          padding: EdgeInsets.all(16.0),
-          child: Text(
-            'भगवद्गीता की प्रमुख शिक्षाएँ:\n\n'
-                '1. फल की इच्छा किए बिना अपना कर्तव्य करो...',
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-class AboutUsPage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text('हमारे बारे में')),
-      body: const Center(
-        child: Padding(
-          padding: EdgeInsets.all(16.0),
-          child: Text(
-            'यह ऐप भगवद्गीता के दिव्य ज्ञान को फैलाने के लिए समर्पित है...',
-          ),
-        ),
+      appBar: AppBar(
+        title: Text(''),
       ),
     );
   }

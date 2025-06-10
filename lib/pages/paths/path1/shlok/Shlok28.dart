@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 
-class Shlok10 extends StatefulWidget {
-  const Shlok10({super.key});
+class Shlok28_29 extends StatefulWidget {
+  const Shlok28_29({super.key});
 
   @override
-  State<Shlok10> createState() => _Shlok10State();
+  State<Shlok28_29> createState() => _Shlok28_29State();
 }
 
-class _Shlok10State extends State<Shlok10> {
+class _Shlok28_29State extends State<Shlok28_29> {
   @override
   Widget build(BuildContext context) {
     return const Placeholder();
   }
 }
+
