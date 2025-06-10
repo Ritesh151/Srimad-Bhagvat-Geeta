@@ -27,7 +27,7 @@ Welcome to the **Srimad Bhagavad Gita - Shlok Speaker App**, a spiritual and edu
 ### Installation
 
 ```bash
-git clone https://github.com/yourusername/srimad-bhagavad-gita-speakable.git
+git clone https://github.com/Ritesh151/Srimad-Bhagvat-Geeta.git
 cd srimad-bhagavad-gita-speakable
 flutter pub get
 flutter run
